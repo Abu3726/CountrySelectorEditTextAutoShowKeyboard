@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:windowSoftInputMode="stateVisible"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="editText"
+        android:autoSizeMaxTextSize="50sp"
+        android:autoSizeMinTextSize="5sp"
+
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:windowSoftInputMode="adjustResize"
+        android:imeOptions="actionDone"
+
+        android:id="@+id/edt"/>
+
+    <com.hbb20.CountryCodePicker
+        app:ccp_defaultNameCode="uz"
+        app:ccp_defaultLanguage="UZBEK"
+        app:ccp_textGravity="LEFT"
+        app:ccp_useDummyEmojiForPreview="true"
+        app:ccp_arrowColor="@color/black"
+        app:ccp_arrowSize="5dp"
+        app:ccp_autoFormatNumber="false"
+        app:ccpDialog_keyboardAutoPopup="false"
+        app:ccp_areaCodeDetectedCountry="false"
+        app:ccp_autoDetectCountry="false"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
