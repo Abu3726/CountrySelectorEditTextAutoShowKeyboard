@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity() {
 
         showKeyboard(editText)
 
+        editText.error = "Error Message"
+
     }
     fun showKeyboard(editText: EditText) {
         editText.requestFocus()
